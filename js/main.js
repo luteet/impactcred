@@ -135,6 +135,7 @@ function tab(elem) {
     },500);
 
 }
+
 let checkSlide = false;
 function slideFunc(elem) {
 
@@ -164,11 +165,8 @@ function slideFunc(elem) {
 }
 
 document.querySelectorAll('.faq__tab-block--item._active').forEach(element => {
-    //slideDown(element,500);
     element.querySelector('.faq__tab-block--item-content').style.display = 'block';
 });
-
-
 
 const swiper = new Swiper('.swiper', {
     loop: true,
@@ -178,9 +176,11 @@ const swiper = new Swiper('.swiper', {
       prevEl: '.swiper-button-prev',
     },
   
-  });
+});
+
 
 let checkTabActive = false;
+
 body.addEventListener('click', function(e) {
 
     // Меню в шапке
@@ -194,6 +194,7 @@ body.addEventListener('click', function(e) {
         e.preventDefault();
         tab(e.target);
     }
+    
     if(e.target.classList.contains('faq__tab-block--item-title') && !e.target.parentNode.classList.contains('_active')) {
 
         slideFunc(e.target);
