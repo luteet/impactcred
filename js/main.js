@@ -194,7 +194,7 @@ body.addEventListener('click', function(e) {
         e.preventDefault();
         tab(e.target);
     }
-    
+
     if(e.target.classList.contains('faq__tab-block--item-title') && !e.target.parentNode.classList.contains('_active')) {
 
         slideFunc(e.target);
@@ -227,21 +227,6 @@ if(e.target.classList.contains('_btn-to-scroll')) {
 }
 
 })
-
-
-
-// Скрипт скролла к секциям {
-
-function scrollTo(element) {
-    window.scroll({
-    left: 0, 
-    top: element,
-    behavior: 'smooth'
-    })
-}
-
-// }
-
 
 // Скрипты для header {
 
