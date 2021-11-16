@@ -66,6 +66,7 @@ function popupInit() {
 
     try {
         popupElem = document.querySelector(hash);
+        popupElem.classList.contains('_popup');
     } catch {
         return false;
     }
