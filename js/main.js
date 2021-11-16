@@ -8,6 +8,11 @@ const body = document.querySelector('body'),
     
 
 
+
+
+
+
+
 function popup(id) {
 
     let popup, popupBg, popupCloseBtn;
@@ -26,8 +31,6 @@ function popup(id) {
     
     body.classList.add('_popup-active');
 
-    
-    
     window.location.hash = id;
 
     popup.classList.add('_active');
@@ -60,6 +63,7 @@ function popup(id) {
 
 }
 
+
 function popupInit() {
     let hash = window.location.hash,
         popupElem;
@@ -78,6 +82,17 @@ function popupInit() {
 }
 
 popupInit();
+
+
+
+
+
+
+
+
+
+
+
 
 function tab(elem) {
 
@@ -137,6 +152,16 @@ function tab(elem) {
 
 }
 
+
+
+
+
+
+
+
+
+
+
 let checkSlide = false;
 function slideFunc(elem) {
 
@@ -169,6 +194,12 @@ document.querySelectorAll('.faq__tab-block--item._active').forEach(element => {
     element.querySelector('.faq__tab-block--item-content').style.display = 'block';
 });
 
+
+
+
+
+
+
 const swiper = new Swiper('.swiper', {
     loop: true,
   
@@ -178,6 +209,12 @@ const swiper = new Swiper('.swiper', {
     },
   
 });
+
+
+
+
+
+
 
 
 let checkTabActive = false;
@@ -228,6 +265,11 @@ if(e.target.classList.contains('_btn-to-scroll')) {
 }
 
 })
+
+
+
+
+
 
 // Скрипты для header {
 
@@ -289,14 +331,6 @@ scrollPage();
 
 
 
-/* // Анимация {
-
-wow = new WOW({
-mobile:       false,
-})
-wow.init();
-
-// } */
 
 
 
