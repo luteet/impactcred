@@ -2,11 +2,11 @@
 	
 	// Переменные
 
-	$companyName = $_POST['company name'];
-	$firstName = $_POST['first name'];
-	$lastName = $_POST['last name'];
+	$companyName = $_POST['company-name'];
+	$firstName = $_POST['first-name'];
+	$lastName = $_POST['last-name'];
 	$email = $_POST['email'];
-	$companyWebsite = $_POST['company website'];
+	$companyWebsite = $_POST['company-website'];
 	$city = $_POST['city'];
 	$country = $_POST['country'];
 
